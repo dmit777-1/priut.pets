@@ -3,76 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приют для наших животных</title>
+    <title>Приют для животных Малый остров – наши питомцы</title>
+    <meta name="description" content="Приют Малый остров более 10 лет помогает животным найти семью. Познакомьтесь с котами, собаками и попугаями, которые ждут вас. Контакты для связи.">
+    <meta property="og:title" content="Приют для животных Малый остров – наши питомцы, контакты">
+    <meta property="og:description" content="Приют Малый остров более 10 лет помогает животным найти семью. Познакомьтесь с котами, собаками и попугаями, которые ждут вас.">
+    <meta property="og:image" content="https://example.com/images/2.jpg">
+    <meta property="og:url" content="https://example.com/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Приют Малый остров">
+    <meta property="og:locale" content="ru_RU">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Приют Малый остров",
+        "telephone": "+7 (484) 523-45-67",
+        "email": "priut@yandex.ru",
+        "openingHours": ["Mo-Fr 10:00-18:00", "Sa 11:00-16:00"],
+        "priceRange": "₽",
+        "image": "https://example.com/logo.png"
+    }
+    </script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="1.png" alt="Логотип приюта для животных">
-            <p>Приют “Малый остров”</p>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Наши животные</a></li>
-                <li><a href="index.html">Связь с нами</a></li>
-                <li><a href="index.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="logo">
+        <img src="1.png" alt="Логотип приюта Малый остров">
+        <p>Приют “Малый остров”</p>
+    </div>
+    <nav class="nav">
+        <ul class="main-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="info.html">О нас</a></li>
+            <li class="dropdown">
+                <a href="jivnost.html">Наши животные ▼</a>
+                <ul class="dropdown-content">
+                    <li><a href="index.html">Кошки</a></li>
+                    <li><a href="index.html">Собаки</a></li>
+                    <li><a href="index.html">Попугаи</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">Связь с нами</a></li>
+            <li><a href="index.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main class="main">
-    
+        <h1>Добро пожаловать в приют Малый остров</h1>
+        
         <section>
             <h2>Одни из наших поселенцев</h2>
             <div class="container">
-                <article class="carta">
-                    <img src="2.jpg" alt="Кот">
-                    <h3>Джой</h3>
-                    <p>Довольно спокойный и милый кот, не любит когда его гладят, но любит когда с ним играются другие коты или люди.</p>
+                <article class="carta" itemscope itemtype="https://schema.org/Animal">
+                    <img src="2.jpg" alt="Кот Джой в приюте Малый остров" itemprop="image">
+                    <h3 itemprop="name">Джой</h3>
+                    <p itemprop="description">Довольно спокойный и милый кот, не любит когда его гладят, но любит когда с ним играются другие коты или люди.</p>
                 </article>
-                <article class="carta">
-                    <img src="3.jpg" alt="Собака">
-                    <h3>Дружок</h3>
-                    <p>Игривый, дружелюбный и красивый пес, любит играться, любит ласки </p>
+                <article class="carta" itemscope itemtype="https://schema.org/Animal">
+                    <img src="3.jpg" alt="Собака Дружок в приюте Малый остров" itemprop="image">
+                    <h3 itemprop="name">Дружок</h3>
+                    <p itemprop="description">Игривый, дружелюбный и красивый пес, любит играться, любит ласки.</p>
                 </article>
-                <article class="carta">
-                    <img src="4.jpg" alt="Попугай">
-                    <h3>Рудольф</h3>
-                    <p>Красивый и умный попугай, очень послушный, красивый.</p>
+                <article class="carta" itemscope itemtype="https://schema.org/Animal">
+                    <img src="4.jpg" alt="Попугай Рудольф в приюте Малый остров" itemprop="image">
+                    <h3 itemprop="name">Рудольф</h3>
+                    <p itemprop="description">Красивый и умный попугай, очень послушный, красивый.</p>
                 </article>
             </div>
         </section>
 
-        <section class="blok">
-            <h3>Информация о нас</h3>
-            <p>Наша сеть приютов существует уже более 10 лет, за все время мы приютили и дали новые семьи для более чем 600 
-животных . Мы ценим и уважаем комфорт каждого поселенца в нашей сети приютов. Также мы помогаем животным в 
-освоении в новой семье, предоставляем условия консультации по нашим поселенцам и поможем подобрать вам 
-вашего нового друга. </p>
-            </div>
+        <section class="blok" itemscope itemtype="https://schema.org/Article">
+            <h3 itemprop="headline">Информация о нас</h3>
+            <p itemprop="articleBody">Наша сеть приютов существует уже более 10 лет, за все время мы приютили и дали новые семьи для более чем 600 животных. Мы ценим и уважаем комфорт каждого поселенца в нашей сети приютов. Также мы помогаем животным в освоении в новой семье, предоставляем условия консультации по нашим поселенцам и поможем подобрать вам вашего нового друга.</p>
         </section>
+
         <section class="blok">
             <h2>Связь с нами по вопросам поселенцев</h2>
             <form class="formasvaz">
                 <label for="name">Ваше имя:</label>
-                <input type="text" id="name" name="name"  required>
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email"  required>
+                <input type="email" id="email" name="email" required>
 
                 <label for="message">Сообщение от вас:</label>
-                <textarea id="message" name="message"  required></textarea>
+                <textarea id="message" name="message" required></textarea>
 
                 <button type="submit">Отправить</button>
             </form>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" itemscope itemtype="https://schema.org/Organization">
         <p>Контакты:</p>
-        <p>Телефон: +7 (484) 523-45-67</p>
-        <p>Email: priut@yandex.ru </p>
+        <p>Телефон: <span itemprop="telephone">+7 (484) 523-45-67</span></p>
+        <p>Email: <span itemprop="email">priut@yandex.ru</span></p>
+        <meta itemprop="name" content="Приют Малый остров">
     </footer>
 </body>
 </html>
