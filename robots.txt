@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /backup/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://dmit777-1.github.io/priut.pets/sitemap.xml
