@@ -30,27 +30,30 @@
 </head>
 <body>
     <header class="header">
-    <div class="logo">
-        <img src="1.png" alt="Логотип приюта Малый остров">
-        <p>Приют “Малый остров”</p>
-    </div>
-    <nav class="nav">
-        <ul class="main-menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="info.html">О нас</a></li>
-            <li class="dropdown">
-                <a href="jivnost.html">Наши животные ▼</a>
-                <ul class="dropdown-content">
-                    <li><a href="index.html">Кошки</a></li>
-                    <li><a href="index.html">Собаки</a></li>
-                    <li><a href="index.html">Попугаи</a></li>
-                </ul>
-            </li>
-            <li><a href="index.html">Связь с нами</a></li>
-            <li><a href="index.html">Контакты</a></li>
-        </ul>
-    </nav>
-</header>
+        <div class="logo">
+            <img src="1.png" 
+                 srcset="1.png 75w, 1.png 150w" 
+                 sizes="(max-width: 425px) 75px, 150px"
+                 alt="Логотип приюта Малый остров">
+            <p>Приют “Малый остров”</p>
+        </div>
+        <nav class="nav">
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="info.html">О нас</a></li>
+                <li class="dropdown">
+                    <a href="jivnost.html">Наши животные ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="index.html">Кошки</a></li>
+                        <li><a href="index.html">Собаки</a></li>
+                        <li><a href="index.html">Попугаи</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Связь с нами</a></li>
+                <li><a href="index.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="main">
         <h1>Добро пожаловать в приют Малый остров</h1>
@@ -59,17 +62,32 @@
             <h2>Одни из наших поселенцев</h2>
             <div class="container">
                 <article class="carta" itemscope itemtype="https://schema.org/Animal">
-                    <img src="2.jpg" alt="Кот Джой в приюте Малый остров" itemprop="image">
+                    <img src="2.jpg" 
+                         srcset="2.jpg 400w, 2.jpg 800w" 
+                         sizes="(max-width: 425px) 100vw, 300px"
+                         alt="Кот Джой в приюте Малый остров" 
+                         itemprop="image"
+                         loading="lazy">
                     <h3 itemprop="name">Джой</h3>
                     <p itemprop="description">Довольно спокойный и милый кот, не любит когда его гладят, но любит когда с ним играются другие коты или люди.</p>
                 </article>
                 <article class="carta" itemscope itemtype="https://schema.org/Animal">
-                    <img src="3.jpg" alt="Собака Дружок в приюте Малый остров" itemprop="image">
+                    <img src="3.jpg" 
+                         srcset="3.jpg 400w, 3.jpg 800w" 
+                         sizes="(max-width: 425px) 100vw, 300px"
+                         alt="Собака Дружок в приюте Малый остров" 
+                         itemprop="image"
+                         loading="lazy">
                     <h3 itemprop="name">Дружок</h3>
                     <p itemprop="description">Игривый, дружелюбный и красивый пес, любит играться, любит ласки.</p>
                 </article>
                 <article class="carta" itemscope itemtype="https://schema.org/Animal">
-                    <img src="4.jpg" alt="Попугай Рудольф в приюте Малый остров" itemprop="image">
+                    <img src="4.jpg" 
+                         srcset="4.jpg 400w, 4.jpg 800w" 
+                         sizes="(max-width: 425px) 100vw, 300px"
+                         alt="Попугай Рудольф в приюте Малый остров" 
+                         itemprop="image"
+                         loading="lazy">
                     <h3 itemprop="name">Рудольф</h3>
                     <p itemprop="description">Красивый и умный попугай, очень послушный, красивый.</p>
                 </article>
